@@ -1,0 +1,49 @@
+<!--<div>
+  <p style="font-weight:bold;font-size: medium;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: blue;"> Enter Your Name :</p>
+   <input type="text" [(ngModel)]="inputText">
+  <p style="font-weight:bold;font-size: medium;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: blue;">Your Name As Entered Is:{{ inputText }}</p>
+
+  <p style="font-weight:bold;font-size: medium;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: red;"> Enter Your Age :</p>
+  <input type="text" [(ngModel)]="inputAge">
+ <p style="font-weight:bold;font-size: medium;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:red;">Your Age As Entered Is:{{ inputAge }}</p>
+
+</div>
+-->
+
+
+<!--<app-home></app-home>-->
+<style>
+table,td,th{
+  border: 1px solid black;
+}
+
+table{
+  border-collapse: collapse;
+  width:90%;
+}
+
+th {
+  height: 50px;
+}
+</style>
+
+
+<table>
+  <tr>
+  <th>Id</th>
+  <th>Post</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Body</th>
+</tr>
+<tr *ngFor="let com of lstcomments">
+<td>{{com.id}}</td>
+<td>{{com.postId}}</td>
+<td>{{com.name}}</td>
+<td>{{com.email}}</td>
+<td>{{com.body}}</td>
+</tr>
+</table>
+
+<button class="btn btn-primary"></button>
+
